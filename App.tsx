@@ -13,7 +13,7 @@ import {
   Plus, Search, Grid, List, CloudSun, Wind, Droplet, 
   Leaf, Thermometer, Camera, Sparkles, X, Trash2, Check,
   Activity, MapPin, Share2, Clipboard, Sun, ChevronLeft, Pencil,
-  Clock
+  Clock, Info
 } from 'lucide-react';
 import { DEFAULT_LOCATIONS } from './constants';
 
@@ -725,6 +725,14 @@ const App: React.FC = () => {
                   <input placeholder="Enter Garden ID" className="flex-1 bg-gray-50 p-3 rounded-lg text-sm outline-none" />
                   <button className="bg-gray-800 text-white px-4 rounded-lg text-sm font-bold">Import</button>
               </div>
+          </div>
+
+          <div className="mt-8 text-center">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full">
+                  <Info size={14} className="text-gray-400" />
+                  <span className="text-xs text-gray-500 font-medium">PlantCare AI v1.1</span>
+              </div>
+              <p className="text-[10px] text-gray-400 mt-2">Powered by Gemini 2.5</p>
           </div>
       </div>
   );
